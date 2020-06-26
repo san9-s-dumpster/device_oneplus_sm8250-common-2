@@ -54,7 +54,6 @@ AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     product \
-    recovery \
     system \
     vbmeta \
     vbmeta_system
