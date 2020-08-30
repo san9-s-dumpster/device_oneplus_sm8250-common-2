@@ -84,4 +84,7 @@ fi
 
 COMMON_BLOB_ROOT="${HAVOC_ROOT}/vendor/${VENDOR}/${DEVICE_COMMON}/proprietary"
 
+sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${COMMON_BLOB_ROOT}/product/vendor_overlay/29/lib/libgf_ud_hal.so"
+sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${COMMON_BLOB_ROOT}/product/vendor_overlay/29/lib64/libgf_ud_hal.so"
+
 "${MY_DIR}/setup-makefiles.sh"
