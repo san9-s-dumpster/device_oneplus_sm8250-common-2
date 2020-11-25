@@ -70,9 +70,6 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 # Treble
 BOARD_VNDK_VERSION := current
 
-# ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
-
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
