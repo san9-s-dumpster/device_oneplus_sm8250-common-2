@@ -41,18 +41,6 @@
     <string name="quick_settings_log_tile_dialog_title">Options</string>
     <string name="cannot_get_su">Action failed because of missing superuser(root) access</string>
 
-    <!-- Notification slider -->
-    <string name="notification_slider_category_title">Notification slider</string>
-    <string name="notification_slider_selection_dialog_title">Action</string>
-    <string name="notification_slider_top_position">Top position</string>
-    <string name="notification_slider_middle_position">Middle position</string>
-    <string name="notification_slider_bottom_position">Bottom position</string>
-    <string name="notification_slider_mode_total_silence">Total silence</string>
-    <string name="notification_slider_mode_priority_only">Priority only</string>
-    <string name="notification_slider_mode_silent">Silent</string>
-    <string name="notification_slider_mode_vibrate">Vibrate</string>
-    <string name="notification_slider_mode_none">Normal</string>
-
     <!-- Vibration Slider -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">Strength</string>

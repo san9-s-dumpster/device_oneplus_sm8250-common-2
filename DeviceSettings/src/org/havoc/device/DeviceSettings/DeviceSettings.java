@@ -48,7 +48,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.TwoStatePreference;
 
 import org.havoc.device.DeviceSettings.FileUtils;
-import org.havoc.device.DeviceSettings.Constants;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -62,9 +61,6 @@ public class DeviceSettings extends PreferenceFragment
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
 
-    private ListPreference mTopKeyPref;
-    private ListPreference mMiddleKeyPref;
-    private ListPreference mBottomKeyPref;
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
@@ -96,16 +92,6 @@ public class DeviceSettings extends PreferenceFragment
         mAutoHBMSwitch.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_AUTO_HBM_SWITCH, false));
         mAutoHBMSwitch.setOnPreferenceChangeListener(this);
 
-        mTopKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_TOP_KEY);
-        mTopKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_TOP_KEY));
-        mTopKeyPref.setOnPreferenceChangeListener(this);
-        mMiddleKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_MIDDLE_KEY);
-        mMiddleKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_MIDDLE_KEY));
-        mMiddleKeyPref.setOnPreferenceChangeListener(this);
-        mBottomKeyPref = (ListPreference) findPreference(Constants.NOTIF_SLIDER_BOTTOM_KEY);
-        mBottomKeyPref.setValueIndex(Constants.getPreferenceInt(getContext(), Constants.NOTIF_SLIDER_BOTTOM_KEY));
-        mBottomKeyPref.setOnPreferenceChangeListener(this);
-
     }
 
     @Override
@@ -125,9 +111,6 @@ public class DeviceSettings extends PreferenceFragment
             } else {
                 this.getContext().stopService(hbmIntent);
             }
-        } else {
-            Constants.setPreferenceInt(getContext(), preference.getKey(),
-                    Integer.parseInt((String) newValue));
         }
         return true;
     }
