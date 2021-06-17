@@ -45,5 +45,4 @@
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">Strength</string>
     <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
-    <string name="vibration_warning">High vibration strength may damage your vibration motor</string>
 </resources>
