@@ -30,12 +30,6 @@
     <!-- Show battery icon in the QS Panel instead of in the header -->
     <bool name="config_batteryInQSPanel">false</bool>
 
-    <!-- Max visible system icons -->
-    <integer name="config_maxVisibleStatusIconContainer">9</integer>
-
     <!-- Biometric Prompt -->
     <dimen name="biometric_dialog_fod_margin">125dp</dimen>
-
-    <!-- Color of the FOD view -->
-    <color name="config_fodColorBackground">#00000000</color>
 </resources>
